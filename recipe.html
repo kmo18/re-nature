@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Team 6">
+    <meta name="description" content="ReNature Official page">
+    <meta name="keywords" content="ReNature Vegan NatureFood">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link rel="stylesheet" href="FlexSlider/flexslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/uhd-desktop.css" media="screen and (min-width: 1401px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1051px) and (max-width: 1400px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 651px) and (max-width: 1050px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 320px) and (max-width: 650px)">
+    <title>채식레시피</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="FlexSlider/jquery.flexslider.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$(document).ready(function( ) { 
+			$('.flexslider').flexslider({ animation: "slide" });			
+		});
+	</script>	
+	
+</head>
+<body>
+	<header id="nav-first">
+		<div class="logo">
+			<a href="index.html"><img src="imgs/ft-uhd-img-logo.png" alt="로고"></a>
+			<a href="index.html"><img src="imgs/ft-logo-mobile.png" alt="로고"></a>
+		</div>
+		<input type="checkbox" id="trigger">
+		<label for="trigger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		
+		<nav>
+			<ul class="main-menu">
+				<li><a href="vegan.html">채식이란</a></li>
+				<li><a href="nutrit.html">채식영양소</a>
+					<ul class="sub-menu">
+						<li><a href="#">유형별 채식</a></li>
+						<li><a href="#">하루영양</a></li>
+						<li><a href="#">채식 속 영양</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="recipe.html">채식레시피</a>
+					<ul class="sub-menu">
+						<li><a href="#">오늘의 레시피</a></li>
+						<li><a href="#">채식 레시피</a></li>
+					</ul>
+				</li>
+				<li><a href="map.html">채식지도</a></li>
+			</ul>
+		</nav>
+		
+		<ul class="top-menu">
+			<li>
+				<a href="#">log-in</a>
+				<a href="#"><i class="fa fa-user"></i></a>
+			</li>
+			<li>
+				<a href="#">join</a>
+				<a href="#"><i class="fa fa-lock"></i></a>
+			</li>
+		</ul>
+	</header>
+	<div class="clear"></div>
+	
+	<header id="nav-fixed">
+		<div class="logo">
+			<a href="index.html"><img src="imgs/logo.png" alt="로고"></a>
+			<a href="index.html"><img src="imgs/logo-mobile.png" alt="로고"></a>
+		</div>
+		<input type="checkbox" id="trigger-fixed">
+		<label for="trigger-fixed">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		
+		<nav>
+			<ul class="main-menu">
+				<li><a href="vegan.html">채식이란</a></li>
+				<li><a href="nutrit.html">채식영양소</a>
+					<ul class="sub-menu">
+						<li><a href="#">유형별 채식</a></li>
+						<li><a href="#">하루영양</a></li>
+						<li><a href="#">채식 속 영양</a></li>
+					</ul>
+				</li>
+				<li>
+
+					<a href="recipe.html">채식레시피</a>
+					<ul class="sub-menu">
+						<li><a href="#">오늘의 레시피</a></li>
+						<li><a href="#">채식 레시피</a></li>
+					</ul>
+				</li>
+				<li><a href="map.html">채식지도</a></li>
+			</ul>
+		</nav>
+		
+		<ul class="top-menu">
+			<li>
+				<a href="#">log-in</a>
+				<a href="#"><i class="fa fa-user"></i></a>
+			</li>
+			<li>
+				<a href="#">join</a>
+				<a href="#"><i class="fa fa-lock"></i></a>
+			</li>
+		</ul>
+	</header>
+	<div class="clear"></div>
+	
+
+	<section>
+		<div class="banner recipe-banner">
+			<h2><strong>V</strong>EGAN <strong>R</strong>ECIPE</h2>
+			<p>채식 <strong>레시피</strong></p>
+		</div>
+
+		<h3>오늘의 레시피</h3>
+		<p>today's recipe</p>
+		<!--레시피 슬라이드-->
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="imgs/recipe/rc-sc-uhd-slide1.jpg" alt="slide01">
+					<img src="imgs/recipe/rc-sc-mb-slide1.jpg" alt="slide01">
+					<div class="slide-explain">
+						<p># 대체육 #콩고기</p>
+						<h4>콩고기가 들어간 <span>비건 타코</span></h4>
+						<a href="#">more</a>
+					</div>
+				</li>
+				<li>
+					<img src="imgs/recipe/rc-sc-uhd-slide2.jpg" alt="slide02">
+					<img src="imgs/recipe/rc-sc-mb-slide2.jpg" alt="slide02">
+					<div class="slide-explain">
+						<p># 대체육 #콩고기</p>
+						<h4>매콤한 토마토소스 <span>치즈 귀리 미트볼</span></h4>
+						<a href="#">more</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<!--레시피 슬라이드 END-->
+		
+		<h3>채식 레시피</h3>
+		<p>vegan recipe</p>
+		
+		<!--레시피 검색 버튼상자-->
+		<div class="recipe-search">
+			<form name="search" action="" method="post">
+				<div class="search-box">
+					<input type="text" name="search" class="search-txt" placeholder="검색어 입력">
+					<a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+				</div>
+			</form>
+			<div class="clear"></div>
+			
+			<form name="check" action="" method="post">
+				<ul class="recipe-mtrlbtn">
+					<li>
+						<input type="checkbox" id="cereals" name="material" value="곡류" checked>
+						<label for="cereals">곡류</label>
+					</li>
+					<li>
+						<input type="checkbox" value="채소류" id="verdure">
+						<label for="verdure">채소류</label>
+					</li>
+					<li>
+						<input type="checkbox" value="과일류" id="fruits">
+						<label for="fruits">과일류</label>
+					</li>
+					<li>
+						<input type="checkbox" value="콩류" id="pulse">
+						<label for="pulse">콩류</label>
+					</li>
+					<li>
+						<input type="checkbox" value="기타" id="rest">
+						<label for="rest">기타</label>
+					</li>
+				</ul>
+			</form>
+			<div class="clear"></div>
+
+			<form name="radiobtn" action="" method="post">
+				<ul class="recipe-typebtn">
+					<li>
+						<input type="radio" name="veganType" id="pesco">
+						<label for="pesco"><i class="fa fa-fish"></i>페스코</label>
+					</li>
+					<li>
+						<input type="radio" name="veganType" id="lacto">
+						<label for="lacto"><i class="fa fa-cheese"></i>락토</label>
+					</li>
+					<li>
+						<input type="radio" name="veganType" id="ovo">
+						<label for="ovo"><i class="fa fa-egg"></i>오보</label>
+					</li>
+					<li>
+						<input type="radio" name="veganType" id="vegan">
+						<label for="vegan"><i class="fa fa-carrot"></i>비건</label>
+					</li>
+					<li>
+						<input type="radio" name="veganType" id="gluten-free">
+						<label for="gluten-free"><i class="fa fa-bread-slice"></i>글루텐프리</label>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</form>
+		</div>
+		<div class="clear"></div>
+		<!--레시피 검색 버튼상자 END-->
+		
+		<!--레시피 카드-->
+		<div class="recipe-card">
+			<p class="p-total">총 356건</p>
+			<p class="p-recent">최신순</p>
+			<p class="p-like">좋아요순</p>
+			<div class="clear"></div>
+
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-caponata.jpg" alt="카포나타"></li>
+				<li>caponata</li>
+				<li>재료 : 가지 2개 | 방울토마토 | 양파 반개 | 발사믹식초 | 올리고당 | 오일 | 말린 바질 | 소금 | 후추</li>
+				<li>
+					<div class="recipe-box">
+						<h4>카포나타</h4>
+						<p>이탈리아 시칠리아섬...</p>
+						<a class="recipe-modal-open caponata" >상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-soup.jpg" alt="들깨 버섯 수프"></li>
+				<li>mushroom soup</li>
+				<li>재료 :버섯 한 줌(양송이, 새송이,표고버섯 중 아무거나) | 양파 반개 | 두유 | 들깨가루 다진마늘 | 소금 | 후추</li>
+				<li>
+					<div class="recipe-box">
+						<h4>들깨 버섯 수프</h4>
+						<p>들깨로 고소한 맛을 더한....</p>
+						<a class="recipe-modal-open soup">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-smoothie.jpg" alt="블루베리 비트 스무디"></li>
+				<li>blueberry beet smoothie</li>
+				<li>재료 :작은 비트 3개 | 블루베리 1/2컵 | 레몬 1개의 즙 | 차가운 물 4컵</li>
+				<li>
+					<div class="recipe-box">
+						<h4>블루베리 비트  스무디</h4>
+						<p>천연 블루베리 비트 스무디...</p>
+						<a class="recipe-modal-open smoothie">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-tarte.jpg" alt="연어 크림치즈  타르틴"></li>
+				<li>salmon tarte</li>
+				<li>재료 :호밀도우 | 양파 | 크림치즈 | 훈제연어 | 레몬즙</li>
+				<li>
+					<div class="recipe-box">
+						<h4>연어 크림치즈  타르틴</h4>
+						<p>연어는 우리 몸에서 생성하지...</p>
+						<a class="recipe-modal-open tarte">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-roll.jpg" alt="치즈 코코넛 롤"></li>
+				<li>cheese coconut roll </li>
+				<li>재료 :달걀 3개 | 코코넛 가루 1컵 (80 g) | 치즈 1조각 | 코코넛우유 1컵</li>
+				<li>
+					<div class="recipe-box">
+						<h4>치즈 코코넛 롤</h4>
+						<p>글루텐 프리로 만든 달콤한...</p>
+						<a class="recipe-modal-open roll">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-sandwich.jpg" alt="오이 달걀 샐러드  샌드위치"></li>
+				<li>salad sandwich</li>
+				<li>재료 :오이 반개 | 달걀 2개 | 호밀빵 | 요거트 | 머스타드 |소금 | 후추</li>
+				<li>
+					<div class="recipe-box">
+						<h4>달걀 샐러드  샌드위치</h4>
+						<p>물기를 살짝 빼서 오독하게 ...</p>
+						<a class="recipe-modal-open sandwich">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-pudding.jpg" alt="무화과 브레드 푸딩"></li>
+				<li>fig bread pudding</li>
+				<li>재료 :무화과 |  달걀 | 우유 | 견과 | 브리치즈 | 꿀 | 코코넛가루</li>
+				<li>
+					<div class="recipe-box">
+						<h4>무화과 브레드 푸딩</h4>
+						<p>자연스런 단맛을 내는 노설탕...</p>
+						<a class="recipe-modal-open pudding">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-gambas.jpg" alt="감바스"></li>
+				<li>gambas</li>
+				<li>재료 :새우200g | 마늘10알 | 올리브오일 | 페퍼론치노 | 말린바질</li>
+				<li>
+					<div class="recipe-box">
+						<h4>감바스</h4>
+						<p>감바스란 새우와 마늘을 ...</p>
+						<a class="recipe-modal-open gambas">상세보기</a>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="imgs/recipe/rc-sc-uhd-img-burger.jpg" alt="퀴노아 패티  채식버거"></li>
+				<li>quinoa burger</li>
+				<li>재료 :퀴노아 200g | 당근 100g | 귀리 가루 70g | 식물성 우유 30ml | 양파 1개 | 리크 1개</li>
+				<li>
+					<div class="recipe-box">
+						<h4>퀴노아 채식 버거</h4>
+						<p>퀴노아는 식물성 단백질, 비타민...</p>
+						<a class="recipe-modal-open burger">상세보기</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+			<div class="clear"></div>	
+			<a href="#" class="moreBtn"><img src="imgs/recipe/rc-sc-uhd-moreview.png" alt="더보기버튼"><p>더보기</p></a>
+	</section>
+	<div class="clear"></div>
+	
+	<footer>
+		<div class="ft-wrap">
+			<div class="ft-logo">
+				<img src="imgs/footer/ft-uhd-img-logo.png" alt="로고">
+			</div>
+
+			<div class="ft-contactus">
+				<h4>contact us</h4>
+				<p>
+					고객센터 | 012 - 345 - 6789<br>
+					찾아오시는 길 | 한국광역시 한국구 한국동 한국길 
+				</p>
+			</div>
+			<div class="ft-sns">
+				<h4>follow us</h4>
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<p>COPYRIGHT&copy; RENATURE.ALL RIGHTS RESERVED.</p>
+		</div>
+	</footer>
+
+
+	<!--//wrap-->
+	<!--modal-->
+	<div class="recipe-modal caponata">
+			<div  class="recipe-modal-content">
+				<div class="recipe-modal-text">
+					<h4> <strong>카포나타</strong> 레시피</h4>			
+					<p>카포나타는 이탈리아 시칠리아식 채소요리입니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						가지 2개 | 방울토마토 | 양파 반개 | 발사믹식초 | 올리고당 | 오일 | 말린 바질 | 소금 | 후추
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-caponata.jpg" alt="카포나타">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					 1. 마늘은 얇게 편썰고  나머지 채소들은 사방 1.5센치 크기로 다진다 <br>
+					 2. 팬을 약불로 달궈 마늘을 볶아 향을 내준 뒤 센불로 올려 양파, 가지, 방울토마토 순으로 넣고 볶는다.<br>
+					 3. 불끄고 소금, 후추, 말린허브를 넣어 간해주면 끝! <br>
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div  class="recipe-modal soup">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>들깨 버섯 스프</strong> 레시피</h4>			
+					<p>들깨로 고소한 맛을 더한 간단한 건강식 버섯 스프입니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						가지 2개 | 방울토마토 | 양파 반개 | 발사믹식초 | 올리고당 | 오일 | 말린 바질 | 소금 | 후추
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-soup.jpg" alt="들깨 버섯 수프">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					 1. 마늘은 얇게 편썰고  나머지 채소들은 사방 1.5센치 크기로 다진다 <br>
+					 2. 팬을 약불로 달궈 마늘을 볶아 향을 내준 뒤 센불로 올려 양파, 가지, 방울토마토 순으로 넣고 볶는다.<br>
+					 3. 불끄고 소금, 후추, 말린허브를 넣어 간해주면 끝! <br>
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div  class="recipe-modal smoothie">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>블루베리 비트  스무디</strong> 레시피</h4>			
+					<p>천연 블루베리 비트 스무디가 체내에 흡수되면 간을 정화하는 데 도움이 된다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						작은 비트 3개 | 블루베리 1/2컵 | 레몬 1개의 즙 | 차가운 물 4컵
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-smoothie.jpg" alt="블루베리 비트 스무디">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 비트를 잘 씻은 뒤 즙을 낸다.<br>
+					2. 믹서기에 완성된 비트즙,블루베리,레몬즙,물을 넣는다.<br>
+					3. 덩어리가 사라질 때까지 잘 갈아 준다.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div class="recipe-modal tarte">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>연어 크림치즈  타르틴</strong> 레시피</h4>			
+					<p>연어는 우리 몸에서 생성하지 않아 음식으로 반드시 섭취해야 하는 필수지방산, 
+							오메가3가 풍부한 음식입니다. </p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						호밀도우 | 양파 | 크림치즈 | 훈제연어 | 레몬즙
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-tarte.jpg" alt="연어 크림치즈  타르틴">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 빵은 미리 구워서 완전히 식혀둔다<br>
+					2. 양파는 다져서 크림치즈와 섞어10분간 냉장고에 둔다<br>
+					3. 훈제연어는 레몬즙을 발라 10분간 냉장보관 한다.<br>
+					4.  빵 위에 양파크림치즈를 바르고 연어를 올린다.<br>
+					5. 후추를 뿌리고 잎,양파 슬라이스 등으로 장식한다.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div class="recipe-modal roll">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>치즈 코코넛 롤</strong> 레시피</h4>			
+					<p>글루텐 프리로 만든 달콤한 디저트로 간단한 영양간식입니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						달걀 3개 | 코코넛 가루 1컵 (80 g) | 치즈 1조각 | 코코넛우유 1컵
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-roll.jpg" alt="치즈 코코넛 롤">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 오븐을 210도로 예열하고 달걀, 오일, 우유, 소금을 넣고 잘 젓는다.<br>
+					2. 치즈를 다져서 코코넛 가루, 카사바 전분 가루를 넣고 모든 재료가 잘 섞일 때까지 잘 젓는다.<br>
+					3. 머핀 틀에 반죽을 붓고 오븐에 넣어 210도에서 20분 굽는다.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div class="recipe-modal sandwich">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>오이 달걀 샐러드  샌드위치</strong> 레시피</h4>			
+					<p>물기를 살짝 빼서 오독하게 식감을 살린 오이에
+							고소한 달걀이 부드럽게 어우러지는 샌드위치입니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						오이 반개 | 달걀 2개 | 호밀빵 | 요거트 | 머스타드 | 소금 | 후추
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-sandwich.jpg" alt="오이 달걀 샐러드  샌드위치">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 오이를 잘게 다져서 소금을 뿌려 10분간 둔 뒤 키친타월로 물기를 짜줍니다.<br>
+					2. 달걀은 삶아 노른자 1개를 제외하고 다져줍니다.<br>
+					3. 오이, 달걀, 요거트 3큰술, 머스타드 2작은술, 소금, 후추 약간을 넣고 섞어요.<br>
+					4. 빵위에 만든 샐러드를 듬뿍 얹고 따로 두었던 노른자를 으깨 뿌려주면 끝.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div class="recipe-modal pudding">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>무화과 브레드 푸딩</strong> 레시피</h4>			
+					<p>자연스런 단맛을 내는 노설탕 무화과 브레드푸딩입니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						무화과 |  달걀 | 우유 | 견과 | 브리치즈 | 꿀 | 코코넛가루
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-pudding.jpg" alt="무화과 브레드 푸딩">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 달걀 1개에 우유,꿀 1작은술을 넣고 섞어줍니다.<br>
+					2. 오븐용기에 코코넛오일을 발라 코팅해주고 빵을 잘게 썰어 담습니다.<br>
+					3. 빵이 잠기도록 달걀물을 부어 30분 이상 담가주세요.<br>
+					4. 브리치즈와 견과류 등을 뿌려넣고,200도 예열오븐에서 약 15분간 익혀줍니다.<br>
+					5. 달걀물이 부풀고 윗면이 노릇해지면 꺼내어 무화과를 썰어 올려주세요.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div class="recipe-modal gambas">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>감바스</strong> 레시피</h4>			
+					<p>감바스란 새우와 마늘을 올리브유에 튀기듯 구워낸 요리로 특히 스페인 남부와 중부지방에서 쉽게 접할 수 있는 음식입니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						새우200g | 마늘10알 | 올리브오일 | 페퍼론치노 | 말린바질
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-gambas.jpg" alt="감바스">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 새우는 청주를 뿌려 10분간 재운 뒤 소금, 후추로 밑간합니다.<br>
+					2. 마늘을 도톰하게 편썰고, 페퍼론치노도 부숩니다.<br>
+					3. 팬에 오일을 붓고 마늘과 페퍼론치노를 넣습니다.<br>
+					4. 오일이 끓으면 새우를 넣고 익힙니다.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+		<div class="recipe-modal burger">
+			<div class="recipe-modal-content">
+				<div  class="recipe-modal-text">
+					<h4> <strong>퀴노아 패티  채식버거</strong> 레시피</h4>			
+					<p>퀴노아는 식물성 단백질, 비타민(B, C, E), 필수 무기질(철분, 칼슘)이 풍부합니다.</p>		
+					<p>
+						<strong>*준비재료*</strong><br>
+						퀴노아 200g | 당근 100g | 귀리 가루 70g | 식물성 우유 30ml | 양파 1개 | 리크 1개
+					</p>
+				</div>
+				<img src="imgs/recipe/rc-sc-uhd-img-burger.jpg" alt="퀴노아 패티  채식버거">
+				<div class="clear"></div>
+				<p>
+					<strong>*요리방법*</strong><br>
+					1. 새우는 청주를 뿌려 10분간 재운 뒤 소금, 후추로 밑간합니다.<br>
+					2. 마늘을 편썰고, 페퍼론치노도 부숩니다.<br>
+					3. 팬에 오일을 붓고 마늘과 페퍼론치노를 넣습니다.<br>
+					4. 오일이 끓기 시작하면 새우를 넣고 익힙니다.
+				</p>
+				<button class="recipe-modal-close">닫기</button>
+			</div>
+		</div>
+	<!--modal END-->
+</body>
+</html>

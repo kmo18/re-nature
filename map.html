@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Team 6">
+    <meta name="description" content="ReNature Official page">
+    <meta name="keywords" content="ReNature Vegan NatureFood">
+    <title>채식지도</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/uhd-desktop.css" media="screen and (min-width: 1401px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1051px) and (max-width: 1400px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 651px) and (max-width: 1050px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 320px) and (max-width: 650px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        /* full screen sub header state */
+        $(document).ready(function() {
+            $('#nav-fixed').css('margin-top', 0);
+            $('.main-menu li').mouseover(function() {
+                $(this).find('.sub-menu').stop().slideDown();
+            });
+            $('.main-menu li').mouseout(function() {
+                $(this).find('.sub-menu').stop().slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="nav-first">
+		<div class="logo">
+			<a href="index.html"><img src="imgs/ft-uhd-img-logo.png" alt="로고"></a>
+			<a href="index.html"><img src="imgs/ft-logo-mobile.png" alt="로고"></a>
+		</div>
+		<input type="checkbox" id="trigger">
+		<label for="trigger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		
+		<nav>
+			<ul class="main-menu">
+				<li><a href="vegan.html">채식이란</a></li>
+				<li><a href="nutrit.html">채식영양소</a>
+					<ul class="sub-menu">
+						<li><a href="#">유형별 채식</a></li>
+						<li><a href="#">하루영양</a></li>
+						<li><a href="#">채식 속 영양</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="recipe.html">채식레시피</a>
+					<ul class="sub-menu">
+						<li><a href="#">오늘의 레시피</a></li>
+						<li><a href="#">채식 레시피</a></li>
+					</ul>
+				</li>
+				<li><a href="map.html">채식지도</a></li>
+			</ul>
+		</nav>
+		
+		<ul class="top-menu">
+			<li>
+				<a href="#">log-in</a>
+				<a href="#"><i class="fa fa-user"></i></a>
+			</li>
+			<li>
+				<a href="#">join</a>
+				<a href="#"><i class="fa fa-lock"></i></a>
+			</li>
+		</ul>
+	</header>
+	<div class="clear"></div>
+	
+	<header id="nav-fixed">
+		<div class="logo">
+			<a href="index.html"><img src="imgs/logo.png" alt="로고"></a>
+			<a href="index.html"><img src="imgs/logo-mobile.png" alt="로고"></a>
+		</div>
+		<input type="checkbox" id="trigger-fixed">
+		<label for="trigger-fixed">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		
+		<nav>
+			<ul class="main-menu">
+				<li><a href="vegan.html">채식이란</a></li>
+				<li><a href="nutrit.html">채식영양소</a>
+					<ul class="sub-menu">
+						<li><a href="#">유형별 채식</a></li>
+						<li><a href="#">하루영양</a></li>
+						<li><a href="#">채식 속 영양</a></li>
+					</ul>
+				</li>
+				<li>
+
+					<a href="recipe.html">채식레시피</a>
+					<ul class="sub-menu">
+						<li><a href="#">오늘의 레시피</a></li>
+						<li><a href="#">채식 레시피</a></li>
+					</ul>
+				</li>
+				<li><a href="map.html">채식지도</a></li>
+			</ul>
+		</nav>
+		
+		<ul class="top-menu">
+			<li>
+				<a href="#">log-in</a>
+				<a href="#"><i class="fa fa-user"></i></a>
+			</li>
+			<li>
+				<a href="#">join</a>
+				<a href="#"><i class="fa fa-lock"></i></a>
+			</li>
+		</ul>
+	</header>
+	<div class="clear"></div>
+    <!-- section -->
+    <section>
+        <div class="map">
+            <div class="map-wrap">
+                <!-- tap menu -->
+                <div class="map-tabs">
+                    <!-- tab button -->
+                    <input type="radio" id="map-tab-1" name="map-tab-button" class="map-tab-select1" checked>
+                    <label for="map-tab-1">검색해서 찾기</label>
+                    <input type="radio" id="map-tab-2" name="map-tab-button" class="map-tab-select2">
+                    <label for="map-tab-2">주변에서 찾기</label>
+                    <div class="clear"></div>
+                    <!-- //tab button -->
+                    <!-- tab contents -->
+                    <div class="map-tab-contents">
+                        <ul class="map-tab-contents1 clearfix">
+                            <li>
+                                <div>
+                                <input type="search" placeholder="검색어 입력">
+                                <button type="button"><i class="fa fa-search"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="map-tab-contents2">
+                            <li>
+                                <ul class="map-button-box clearfix">
+                                    <li>
+                                        <input type="checkbox" id="map-chk1" name="map-check-button">
+                                        <label for="map-chk1">식당</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="map-chk2" name="map-check-button">
+                                        <label for="map-chk2">카페</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="map-chk3" name="map-check-button">
+                                        <label for="map-chk3">딜리버리</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //tab contents -->
+                    <!-- search list -->
+                    <ul class="map-search-list clearfix">
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>23m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>67m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>95m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>158m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>216m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>412m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>468m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>531m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>668m</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2>식당이름 더미텍스트</h2>
+                                <p>식당을 소개하는 더미텍스트</p>
+                                <p>남은거리를 표시</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //search list -->
+                </div>
+                <!-- //tab menu -->
+            </div>
+            <!-- modal -->
+            <div class="map-modal">
+                <div class="map-modal-content">
+                    <a href="#" class="map-modal-close"><img src="imgs/map/map-close.png" alt="팝업닫기버튼"></a>
+                    <h2>음식점 이름</h2>
+                    <!-- map slider -->
+                    <div class="map-slider">
+                        <a href="#" id="map-prev"><i class="fa fa-angle-left"></i></a>
+                        <a href="#" id="map-next"><i class="fa fa-angle-right"></i></a>
+                        <ul class="map-slide-list">
+                            <li class="map-slide"><a href="#"><img src="imgs/map/map-slide01.jpg" alt="슬라이드"></a></li>
+                            <li class="map-slide"><a href="#"><img src="imgs/map/map-slide02.jpg" alt="슬라이드"></a></li>
+                            <li class="map-slide"><a href="#"><img src="imgs/map/map-slide03.jpg" alt="슬라이드"></a></li>
+                        </ul>
+                    </div>
+                    <!-- //map slider -->
+                    <!-- info -->
+                    <ul>
+                        <li>대표메뉴</li>
+                        <li>가격대</li>
+                        <li>영업시간</li>
+                        <li>주소</li>
+                        <li>전화번호</li>
+                    </ul>
+                    <ul>
+                        <li>대표메뉴명</li>
+                        <li>2인 기준 (2만원대)</li>
+                        <li>09:00 - 20:00</li>
+                        <li>한국구 한국동 한국빌딩 2층</li>
+                        <li>062 - 123 - 4567</li>
+                    </ul>
+                    <!-- //info -->
+                </div>
+            </div>
+            <!-- //modal -->
+        </div>
+    </section>
+    <!-- //section -->
+</body>
+</html>

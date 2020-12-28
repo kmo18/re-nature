@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Team 6">
+    <meta name="description" content="ReNature Official page">
+    <meta name="keywords" content="ReNature Vegan NatureFood">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/uhd-desktop.css" media="screen and (min-width: 1401px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1051px) and (max-width: 1400px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 651px) and (max-width: 1050px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width: 320px) and (max-width: 650px)">
+    <title>Re;Nature</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main-slider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#main-logo').on('mouseover', function() {
+                $(this).find('img').attr('src', 'imgs/all-logo-color.png');
+            });
+            $('#main-logo').on('mouseout', function() {
+                $(this).find('img').attr('src', 'imgs/main-logo.png');
+            });
+            if($(window).width() < 1000) {
+                $('#main-logo').off();
+            }
+        });
+    </script>
+    <script></script>
+<body>
+    <div id="main-logo">
+        <h1><a href="index.html"><img src="imgs/main-logo.png" alt="리네이처 로고"></a></h1>
+    </div>
+    <!-- section-->
+    <section>
+        <!-- main slider -->
+        <div class="slider">
+            <a href="#" id="prev"></a>
+            <a href="#" id="next"></a>
+            <ul class="bullet_list">
+                <li class="bullet"><a href="vegan.html">vegan</a></li>
+                <li class="bullet"><a href="nutrit.html">nutrit</a></li>
+                <li class="bullet"><a href="recipe.html">recipe</a></li>
+                <li class="bullet"><a href="map.html">map</a></li>
+            </ul>
+            <!-- slide -->
+            <ul class="slide_list">
+                <li class="slide"><a href="#"><img src="imgs/main-sc-uhd-slide01.jpg" alt="자연에서 찾는 즐거움"></a></li>
+                <li class="slide"><a href="#"><img src="imgs/main-sc-uhd-slide02.jpg" alt="균형잡힌 건강한 식단"></a></li>
+                <li class="slide"><a href="#"><img src="imgs/main-sc-uhd-slide03.jpg" alt="쉽고 간단한 맛있는 음식"></a></li>
+                <li class="slide"><a href="#"><img src="imgs/main-sc-uhd-slide04.jpg" alt="편리한 맞춤형 정보"></a></li>
+            </ul>
+            <!-- //slide -->
+        </div>
+        <!-- //main slider -->
+    </section>
+    <!-- //section -->
+    <!-- copyright -->
+    <div class="copyright">
+        <p>COPYRIGHT&copy;RENATURE.ALL RIGHTS RESERVED.</p>
+    </div>
+    <!-- //copyright -->
+</body>
+</html>

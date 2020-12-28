@@ -1,0 +1,803 @@
+@charset "utf-8";
+
+/* ========== MOBILE main-logo start ========== */
+
+#main-logo { position: fixed; left: 50%; transform: translateX(-50%); z-index: 9; }
+#main-logo h1 { overflow: hidden; width: 85px; line-height: 80px; }
+#main-logo h1 img { height: 25px; }
+
+/* ========== //MOBILE main-logo end ========== */
+
+
+
+/* ========== MOBILE main-copyright start ========== */
+
+.copyright { position: absolute; bottom: 30px; width: 100%; text-align: center; }
+.copyright p { font-size: 12px; color: #626262; }
+
+/* ========== //MOBILE main-copyright end ========== */
+
+
+/* ========== sub header  ========== */
+
+header {
+	position: fixed; width:100%; height:60px; 
+	border-bottom:1px solid rgba(226,226,226,0.6);
+}
+.logo { position:absolute; left:50%; transform:translate(-40%, 35%); }
+.logo a:first-child { display:none; }
+
+#trigger, #trigger-fixed { display:none; }
+#trigger + label, #trigger-fixed + label { position: absolute; right:20px; top: 20px; width: 30px; height: 25px; cursor:pointer; }
+#trigger + label span, #trigger-fixed + label span {
+    position:absolute; right: 0; top: 0; width:100%; height:3px;
+    background:rgba(255,255,255,0.6); border-radius: 4px; 
+	transition: all 0.3s ease-in-out; 
+}
+#trigger + label span:nth-child(1), #trigger-fixed + label span:nth-child(1) { top:0; }
+#trigger + label span:nth-child(2), #trigger-fixed + label span:nth-child(2) { top:10px; }
+#trigger + label span:nth-child(3), #trigger-fixed + label span:nth-child(3) { top:20px; }
+
+.top-menu { position: absolute; top:5px; left:20px; float:left; }
+.top-menu li { padding-right:20px; }
+.top-menu > li > a { color:rgba(242,242,242,0.8); }
+.top-menu li a:first-child { display:none; }
+.top-menu li a:nth-child(2) { padding-top:5px; font-size:25px; }
+
+nav { 
+	display:none; width:100%; height:650px; margin-top:60px; 
+	background:#F2F2F2; border-bottom: 1px solid #eee; 
+	animation:slow-btn 0.8s; 
+}
+
+.main-menu > li { width:100%; }
+.main-menu > li:first-child { margin-top: 20px; }
+.main-menu > li > a { padding:20px 30px 15px 50px; font-size:30px; font-weight:bold; text-align: center; transition:all 0.2s ease-in; }
+
+.sub-menu { display:none; }
+.sub-menu li { width:100%; }
+.sub-menu li a { padding:10px 0 15px 20px; font-size:20px; text-align: center; }
+.sub-menu li:last-child a { padding-bottom:20px; }
+
+
+#nav-fixed { 
+	position:fixed; width:100%; margin-top:-80px; 
+	background:#FFF; border-bottom:1px solid rgba(226,226,226,1.00);
+	z-index: 9;
+	transition:all 0.4s ease-in;
+}
+#trigger-fixed + label span { background: #1b5e20; }
+#nav-fixed nav { background:#FFF; }
+#nav-fixed .top-menu li a { color:rgba(27,94,32,1); }
+
+
+.top-menu li a:hover { color:rgba(242,242,242,1); }
+.main-menu li a:hover { color: #1b5e20; }
+#nav-fixed .top-menu li a:hover { color:rgba(27,94,32,0.8); }
+
+#trigger:checked + label span:nth-child(1), #trigger-fixed:checked + label span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+#trigger:checked + label span:nth-child(2), #trigger-fixed:checked + label span:nth-child(2) { display:none; }
+#trigger:checked + label span:nth-child(3), #trigger-fixed:checked + label span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+#nav-first #trigger:checked ~ nav, #nav-fixed #trigger-fixed:checked ~ nav { display:block; }
+
+
+/* ========== //sub header  ========== */
+
+
+/* ========== MOBILE sub-footer start ========== */
+
+footer { width:100%; height:320px; margin-top:80px; padding-top:60px; color:#FFF; background:#333;}
+.ft-wrap { width:260px; margin:0 auto;}
+.ft-logo { width:96px; height:34px; margin:0 auto; background:url(../imgs/footer/ft-sm-bg-logo.png) no-repeat center center; transition:all 0.4s ease-in;}
+.ft-logo>img { display:none;}
+.ft-wrap h4 { display:none; padding-bottom:20px; font-size:20px; font-weight: 700; text-align: center; text-transform: capitalize; }
+.ft-contactus { width:260px; height:50px; margin:0 auto; margin-top:25px;  }
+.ft-contactus>p { font-size:12px; text-align: center; line-height: 22px;}
+.ft-sns { width:220px; height:50px; margin:0 auto; margin-top:25px; }
+.ft-sns ul li {  width:40px; height:40px; margin:0 10px; transition:all 0.4s ease-in; }
+.ft-sns ul li:nth-child(1) {margin-left:0;background:url("../imgs/footer/all-ft-instagram.png") no-repeat center center;}
+.ft-sns ul li:nth-child(2) {background:url("../imgs/footer/all-ft-facebook.png") no-repeat center center;}
+.ft-sns ul li:nth-child(3) {background:url("../imgs/footer/all-ft-youtube.png")no-repeat center center;}
+.ft-sns ul li:nth-child(4) {margin-right:0; background:url("../imgs/footer/all-ft-blog.png") no-repeat center center;}
+.ft-sns ul li a {width:100%; height:100%;}
+.ft-wrap> p { padding-top:30px;  font-size:11px; color:#626262;text-align: center; letter-spacing: 2; }
+
+
+.ft-sns ul li:nth-child(1):hover { background:url("../imgs/footer/all-instagram-color.png")no-repeat center center;}
+.ft-sns ul li:nth-child(2):hover {background:url("../imgs/footer/all-facebook-color.png")no-repeat center center;}
+.ft-sns ul li:nth-child(3):hover {background:url("../imgs/footer/all-youtube-color.png")no-repeat center center;}
+.ft-sns ul li:nth-child(4):hover {background:url("../imgs/footer/all-blog-color.png")no-repeat center center;}
+
+/* ========== MOBILE sub-footer end ========== */
+
+
+
+/* ===== MOBILE main-index start ===== */
+
+section { width: 100%; height: 100%; }
+
+/* main slider */
+.slider { overflow: hidden; position: relative; width: 100vw; height: 100vh; }
+.slider .slide_list { position: absolute; height: 100vh; }
+.slider .slide_list .slide { overflow: hidden; float: left; width: 100vw; height: 100vh; }
+.slider .slide_list .slide img { width: 100vw; height: 100vh; }
+
+/* slide prev & next button */
+#prev, 
+#next { position: absolute; left: 50%; top: 35%; width: 40px; height: 50px; background-size: cover; transform: translate(-50%, -50%); z-index: 9; transition: background-image .3s; }
+#prev { margin-left: calc(-50% + 40px); background: url("../imgs/main-sc-slide-prev-small.png") no-repeat center center; }
+#next { margin-left: calc(50% - 40px); background: url("../imgs/main-sc-slide-next-small.png") no-repeat center center; }
+
+/* slide bullet */
+.bullet_list { position: absolute; left: 50%; bottom: 150px; width: 320px; height: 60px; transform: translateX(-50%); z-index: 9; }
+.bullet_list .bullet { position: absolute; bottom: 0; width: 60px; height: 10px; text-align: center; line-height: 50px; background: rgba(27, 87, 31, .8); transition: all .3s; }
+.bullet_list .bullet:nth-of-type(1) { left: 16px; }
+.bullet_list .bullet:nth-of-type(2) { left: 92px; }
+.bullet_list .bullet:nth-of-type(3) { right: 92px; }
+.bullet_list .bullet:nth-of-type(4) { right: 16px; }
+.bullet_list .bullet a { position: relative; bottom: 45px; width: 100%; height: 55px; font-size: 18px; font-weight: bold; color: rgba(255, 255, 255, .9); text-transform: capitalize; }
+
+.bullet_list .bullet.active_bullet { background: #f6edde; }
+.bullet_list .bullet.active_bullet a { color: #f6edde; }
+
+/* ===== //MOBILE main-index end ===== */
+
+
+
+/* ===== MOBILE vegan-index start ===== */
+
+/* ===== section - vegan banner ===== */
+.vegan.banner {
+	width:100%; height: 560px;
+	background:url("../imgs/vg-bn-mb-vegan.png") no-repeat center center;
+}
+.banner h2 { width:300px; margin:0 auto; padding-top:230px; font-size: 50px; line-height: 50px; }
+.banner p { padding-top: 10px; font-size: 25px; }
+
+
+/* ===== title ===== */
+h3 { margin-top:60px; font-size: 25px; }
+h3 + p { font-size: 15px; }
+
+
+
+/* ===== section-wrap ===== */
+.vg-sc-wrap { width:100%; margin:0 auto; }
+
+
+
+/* ===== section - first info group ===== */
+.vg-explain {
+	display:block;
+	margin:30px 60px 0 60px; line-height:30px;
+	border-top:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9;
+	letter-spacing: 0.2px;
+}
+.vg-explain > strong {
+    color:#1b5e20;
+}
+.vg-explain > span { 
+	display:block;
+	padding-top:20px;
+	font-weight:bold; 
+}
+
+
+
+/* ===== section-second info group ===== */
+.vg-sc-wrap > div {
+	height:1990px; margin:30px auto 0; padding:0 15px;
+	background:#fdf7ed;
+    text-align:center;
+}
+.vg-sc-wrap > div p {
+	width:170px; margin: 0 auto;
+	padding-top:22px;
+	font-weight:bold;
+	letter-spacing: -1px;
+	
+}
+.vg-vcbar {
+	width:2px; height:80px; margin:30px auto;
+	border-left:2px solid #ebd2a8;
+}
+.vg-sc-wrap ul {
+	width:100%;
+}
+.vg-sc-wrap ul li {
+	position:relative;
+	width:100%; height:540px; margin-top:30px;
+}
+.vg-sc-wrap ul li:first-child {
+	margin-top:none;
+	background:url("../imgs/vg-sc-mb-healthy.jpg")  no-repeat center center;
+	background-size:cover;
+}
+.vg-sc-wrap ul li:nth-child(2) {
+	background:url("../imgs/vg-sc-mb-nature.jpg")  no-repeat center center;
+	background-size:cover;
+}
+.vg-sc-wrap ul li:last-child {
+	background:url("../imgs/vg-sc-mb-protect.jpg")  no-repeat center center;
+	background-size:cover;
+}
+.vg-sc-wrap ul li div {
+	height:inherit; margin:0 auto;
+	background:rgba(0,0,0,0.5);
+	opacity:1;
+}
+.vg-sc-wrap ul li h4 {
+	position:absolute; left:50%; top:90px;
+	font-family: 'Roboto', sans-serif; font-size:30px; font-weight:bold; color:#fff; letter-spacing:1px;
+	transform:translateX(-50%);
+}
+.vg-sc-wrap ul li div .vg-mid-bar {
+	display:none;
+	position:absolute; left:50%; top:60px;
+	width:80px; height:1px; margin-left:-40px;
+	background:#fff;
+}
+.vg-sc-wrap ul li div p {
+	position:absolute; left:50%; bottom:40px;
+	width:90%; padding:0 5%;
+	font-size:16px; color:#fff; font-weight:400; letter-spacing:0; 
+	text-align:left; line-height:25px;
+	transform:translateX(-50%);
+}
+
+/* ===== //MOBILE vegan-index end ===== */
+
+
+
+/* ===== MOBILE nutrit-index start ===== */
+
+/* ===== banner ===== */
+.nutrition.banner { height:570px; background: url("../imgs/nutrition/nt-bn-uhd.jpg") no-repeat center center; }
+/*.banner h2 { width:300px; margin:0 auto; padding-top:220px; font-size: 50px; line-height: 50px; }
+.banner p { padding-top: 10px; font-size: 25px;}*/
+
+
+
+/* ===== title ===== */
+
+/*h3 { margin-top:60px; font-size: 25px; }
+h3 + p { font-size: 15px; }*/
+
+
+
+/* ===== 유형별 영양 가이드 Nutritional Type Guide ===== */
+.regular, .regularTwoShow { display:none; }
+
+.type { width:340px; margin:30px auto; }
+.nutrition-type-card { height:350px; border:1px solid #c8e6c9; box-shadow: 0 0 3px rgba(0,0,0,0.2); overflow: hidden; }
+.nutrition-type-card img { width:100%; height:210px; border-bottom:1px solid #c8e6c9; transition:all 0.3s ease-in; }
+.nutrition-type-card:hover img { transform:scale(1.1) translateY(-10px); }
+.nutrition-type-card  h4 { padding: 25px 0 10px 0; text-align: center; }
+.nutrition-type-card ul li { width:50%; line-height: 25px; }
+.nutrition-type-card ul li:first-child {
+	float: left; padding:0 5px 10px 0; 
+	font-family: 'Roboto', sans-serif; color:#ff6f00; text-align: right; 
+}
+.nutrition-type-card ul li:nth-child(2) {
+	float: right; padding: 0 0 10px 5px; 
+	text-align: left; 
+}
+.slick-slide { margin: 0px 15px; }
+.slick-slide { transition: all ease-in-out .3s; }
+
+@media screen and (min-width:320px) and (max-width:430px) {
+	.type { width:245px; margin:30px auto; }
+	.nutrition-type-card { height:310px; border:1px solid #c8e6c9; box-shadow: 0 0 3px rgba(0,0,0,0.2); overflow: hidden; }
+	.nutrition-type-card img { width:100%; height:170px; border-bottom:1px solid #c8e6c9; transition:all 0.3s ease-in; }
+	.slick-slide { margin: 0px 10px; }
+}
+
+
+
+/* ===== 하루 영양 권장량 Daily Nutritional Amount ===== */
+.nutrition-amount-title { margin-top:90px; }
+
+.nutrition-amount-age, .nutrition-amount { width:400px; margin:0 auto; }
+.nutrition-amount-age li { 
+	height:50px; margin-top:30px; 
+	font-size:17px; line-height: 50px; 
+	background: #fff8e1; border-top: 3px solid #666666; border-bottom: 1px solid #e5e5e5; 
+}
+.nutrition-amount-age li:first-child { width:50px; border-right: 1px solid #dcdcdc; }
+.nutrition-amount-age li:nth-child(2) { width:220px; padding-left:140px; }
+.nutrition-amount-age li:nth-child(3) { width:90px; }
+
+
+.nutrition-amount > li:first-child {
+	width: 50px; height: 230px;
+	line-height: 230px; text-align: center; font-weight: bold; 
+	background: #f9f9fb; border-right: 1px solid #dcdcdc;
+}
+.nutrition-amount .female { border-top: 1px solid #eeeeee; }
+.nutrition-amount li ul { width:240px; height: 230px; border-bottom: 1px solid #eeeeee; }
+.nutrition-amount li ul li { width:70px; padding:10px 0; line-height: 40px; }
+.nutrition-amount li ul li:first-child { width:170px; padding-right:50px; text-align: right; }
+
+.nutrition-amount .no-tab { width:70px; }
+.nutrition-amount .no-tab li:first-child { display:none; }
+.nutrition-amount li.female, .nutrition-amount li ul { border-bottom: 2px solid #666666; }
+.nutrition-amount .no ul { border-bottom: 1px solid #eeeeee; }
+
+
+@media screen and (min-width:320px) and (max-width:401px) {
+	.nutrition-amount-age, .nutrition-amount { width:300px; }
+	.nutrition-amount-age li { height:40px; line-height: 38px; }
+	.nutrition-amount-age li:first-child { width:40px; }
+	.nutrition-amount-age li:nth-child(2) { width:180px; padding-left:100px; }
+	.nutrition-amount-age li:nth-child(3) { width:80px; }
+
+	.nutrition-amount > li:first-child { width: 40px; height: 210px; line-height: 200px;}
+	.nutrition-amount li ul { width:210px; height: 210px; }
+	.nutrition-amount li ul li { width:50px; padding:15px 0; line-height: 35px; }
+	.nutrition-amount li ul li:first-child { width:130px; padding-right:40px;  }
+	.nutrition-amount .no-tab { width:50px; }
+}
+
+
+
+/* ===== Nutrition-Space ===== */
+
+.nutrition-space { 
+	width:100%; height: 300px; margin:70px auto 0; 
+	background: url("../imgs/nutrition/nt-space-mobile.jpg") no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed; 
+}
+.nutrition-space p { font-weight:bold; text-transform: uppercase; }
+.nutrition-space p:first-child { padding:100px 0 0 25%; color:#e8f5e9; font-size:30px; text-shadow:0 0 3px rgba(0,0,0,0.4); }
+.nutrition-space p:last-child { margin:-38px 0 0 35%; color:rgba(255,255,255,0.9); font-size: 70px; text-shadow:1px 2px 3px rgba(0,0,0,0.9); }
+
+@media screen and (min-width:401px) and (max-width:500px) {
+	.nutrition-space p:first-child { padding-left:20%; }
+	.nutrition-space p:last-child { margin-left:30%; }
+}
+@media screen and (min-width:320px) and (max-width:400px) {
+	.nutrition-space p:first-child { padding-left:10%; }
+	.nutrition-space p:last-child { margin-left:23%; }
+}
+
+
+
+/* ===== 채식 속 영양 Vegetarian Nutrition ===== */
+
+/* ===== Tab ===== */	
+.nutrition-tab { position:relative; width:300px; margin:30px auto 0; }
+
+.nutrition-tab input {
+	position:absolute; left:0; top:0; width:100px; height:50px; margin-bottom: 50px;
+	opacity:0; cursor:pointer; z-index:999;
+}
+.nutrition-tab input#tab-2 { left:100px; }
+.nutrition-tab input#tab-3 { left:200px; }
+.nutrition-tab label { 
+	display:block; float:left; position:relative; width:100px; height:50px; 
+	color:#b1b1b1; text-align: center; line-height: 50px; 
+	background:rgba(177,177,177,0.1); border-radius:5px 5px 0 0;
+	border:1px solid #b1b1b1; 
+}
+.nutrition-tab label:after {
+	content:"";
+	opacity:0;
+	display:block; position:absolute; left:0; bottom:-2px; width:100%; height:2px; 
+	background:#FFF; z-index:6;
+}
+.nutrition-tab input:hover +label { 
+	top:-1px; height:51px; 
+	color: rgba(0,0,0,0.8); background: rgba(249,249,251,0.5); 
+}
+.tab-label-2 {z-index:3;}
+.tab-label-3 {z-index:2;}
+
+
+.nutrition-tab input:checked + label { 
+	top:-2px; height:52px; 
+	color:#333; font-size:17px; font-weight:bold;
+	background:#FFF;
+	border:1px solid #000; border-radius: 5px 5px 0 0; z-index:5; 
+} 
+.nutrition-tab input:checked + label:after { opacity:1; }
+
+
+/* ===== Tab Content ===== */
+.nutrition-card { 
+	position:relative; left:0; top:49px; width:100%; height:1910px;
+	border-top:1px solid #b1b1b1; z-index:1;
+}
+
+.nutrition-card-1, .nutrition-card-2, .nutrition-card-3 { 
+	position:absolute; left:0; top:0; margin-top:20px; 
+	opacity: 0; z-index: 1; 
+	transition:opacity 0.2s ease-in; 
+}
+.nutrition-tab input.tab-selector-1:checked ~ .nutrition-card .nutrition-card-1,
+.nutrition-tab input.tab-selector-2:checked ~ .nutrition-card .nutrition-card-2,
+.nutrition-tab input.tab-selector-3:checked ~ .nutrition-card .nutrition-card-3 {
+	opacity:1; z-index: 99; transition: opacity 0.3s ease-out 0.1s;
+}
+.nutrition-card-1 li, .nutrition-card-2 li, .nutrition-card-3 li {
+	float: left;
+	width:300px; height:200px; margin-top:30px; 
+    color:#F8F8F8;
+	border-radius:10px; border:1px solid #dcdcdc; overflow: hidden; 
+}
+.nutrition-card-1 li div, .nutrition-card-2 li div, .nutrition-card-3 li div {
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.1); 
+	box-shadow: inset 0 0 10px 10px rgba(255,255,255,0.3);
+    cursor:pointer;
+    transition:all 0.4s ease-in;
+}
+
+.nutrition-card-1 li p, .nutrition-card-2 li p, .nutrition-card-3 li p { opacity:0; }
+.nutrition-card-1 li p:first-child, .nutrition-card-2 li p:first-child, .nutrition-card-3 li p:first-child {
+	padding-top:20px;  font-size:20px; font-weight:700; text-align: center;
+	transition: all 0.2s ease-in;
+}
+.nutrition-card-1 li p:nth-child(2), .nutrition-card-2 li p:nth-child(2), .nutrition-card-3 li p:nth-child(2) {
+	float:left; padding-top:8px; 
+	text-align: right; line-height: 25px;	
+	transition: all 0.3s ease-in;
+}
+.nutrition-card-1 p:last-child, .nutrition-card-2 p:last-child, .nutrition-card-3 p:last-child {
+	float: right; padding-top:8px;
+	line-height: 25px;	
+	transition: all 0.3s ease-in 0.2s; 
+}
+
+
+.nutrition-card-1 li:hover div, .nutrition-card-2 li:hover div, .nutrition-card-3 li:hover div { 
+	background:rgba(0,0,0,0.7); box-shadow:inset 0 0 1px 1px rgba(255,255,255,0.1); 
+}
+.nutrition-card-1 li:hover p:nth-child(2), .nutrition-card-2 li:hover p:nth-child(2), .nutrition-card-3 li:hover p:nth-child(2) {
+	padding-left:85px;
+}
+.nutrition-card-1 li:hover p:last-child, .nutrition-card-2 li:hover p:last-child, .nutrition-card-3 li:hover p:last-child {
+	padding-right:85px;
+}
+
+.nutrition-card-1 li:hover div p, .nutrition-card-2 li:hover div p, .nutrition-card-3 li:hover div p { opacity: 1; }
+
+
+.nutrition-card-1 li:first-child { background: url("../imgs/nutrition/vege-1.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(2) { background: url("../imgs/nutrition/vege-2.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(3) { background: url("../imgs/nutrition/vege-3.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(4) { background: url("../imgs/nutrition/vege-4.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(5) { background: url("../imgs/nutrition/vege-5.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(6) { background: url("../imgs/nutrition/vege-6.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(7) { background: url("../imgs/nutrition/vege-7.jpg") no-repeat center center; }
+.nutrition-card-1 li:nth-child(8) { background: url("../imgs/nutrition/vege-8.jpg") no-repeat center center; }
+
+.nutrition-card-2 li:first-child { background: url("../imgs/nutrition/fruit-1.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(2) { background: url("../imgs/nutrition/fruit-2.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(3) { background: url("../imgs/nutrition/fruit-3.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(4) { background: url("../imgs/nutrition/fruit-4.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(5) { background: url("../imgs/nutrition/fruit-5.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(6) { background: url("../imgs/nutrition/fruit-6.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(7) { background: url("../imgs/nutrition/fruit-7.jpg") no-repeat center center; }
+.nutrition-card-2 li:nth-child(8) { background: url("../imgs/nutrition/fruit-8.jpg") no-repeat center center; }
+
+.nutrition-card-3 li:first-child { background: url("../imgs/nutrition/et-1.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(2) { background: url("../imgs/nutrition/et-2.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(3) { background: url("../imgs/nutrition/et-3.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(4) { background: url("../imgs/nutrition/et-4.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(5) { background: url("../imgs/nutrition/et-5.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(6) { background: url("../imgs/nutrition/et-6.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(7) { background: url("../imgs/nutrition/et-7.jpg") no-repeat center center; }
+.nutrition-card-3 li:nth-child(8) { background: url("../imgs/nutrition/et-8.jpg") no-repeat center center; }
+
+
+/* ===== //MOBILE nutrit-index end ===== */
+
+
+
+/* ===== MOBILE recipe-index start ===== */
+
+/*Recipe  banner  */
+.recipe-banner { 
+	width:100%; height:570px;
+	background:url("../imgs/recipe/rc-sc-mob-bn-bg.jpg") no-repeat center center;
+	background-size:cover;
+}
+/*.banner h2 { width:300px; margin:0 auto; padding-top:220px; font-size: 50px; line-height: 50px; }
+.banner p { padding-top: 10px; font-size: 25px;}*/
+
+/*Recipe  sub title  */
+/*.recipe-sec h3 { padding-top:60px; font-size:25px;}
+.recipe-sec h3 + p { padding-top:0; font-size:15px; text-transform: capitalize; } */
+
+/*Recipe seach box*/
+.recipe-search {
+	position:relative;
+	width:100%; margin-top:30px; 
+	border-top:2px solid #E4E4E4;
+	border-bottom:2px solid #E4E4E4;
+}
+
+/*Recipe seach bar*/
+.search-box {
+	position:absolute; left:50%; top:60px; height:40px;
+	background:rgba(27,94,32,0.8); border-radius:40px;
+	transform: translate(-50%,-50%);/*항상 정중앙*/
+}
+
+.search-txt {
+	float:left; width:0; height:100%;
+	color:#000;line-height:100%; text-indent: 15px;
+	border:none;outline:none;background:none;
+	transition:all 0.4s ease-out;
+}
+.search-btn {
+    float:right;display:flex; justify-content: center; align-items: center;
+	width:30px;height:30px; margin:5px;
+	color:rgba(232,232,232,1);  background:rgba(27,94,32,0.4);border-radius:50%;
+	transition:all 0.4s ease-in 0.2s;
+}
+.search-box:hover, .search-box:focus { background:#e8f5e9;}
+.search-box:hover .search-txt, .search-box:focus .search-txt {width:120px;}
+.search-box:hover  .search-btn , .search-box:focus  .search-btn { color:#FFF; background:rgba(27,94,32,0.8);}
+
+/* Recipe  material button   */
+.recipe-mtrlbtn { width:300px; margin:110px auto 0 auto; background:#CDe;}
+.recipe-mtrlbtn li {width:90px; height:40px; margin:5px;}
+.recipe-mtrlbtn li:nth-of-type(4) {margin-left:55px;}
+.recipe-mtrlbtn input {
+	display:block; width:100%; height:100%;
+	z-index:9; opacity:0;
+}
+.recipe-mtrlbtn label {
+	display:block; width:100%; height:100%;
+	text-align:center;line-height:40px;  transform:translateY(-40px);
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
+    border:1px solid #E9E9E9;border-radius:5px;
+	transition:all 0.2s ease-out; cursor:pointer;
+}
+
+.recipe-mtrlbtn input:hover + label { 
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+0,fbfff4+100 */
+	background: rgb(239,239,239); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(239,239,239,1) 0%, rgba(251,255,244,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(251,255,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(239,239,239,1) 0%,rgba(251,255,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fbfff4',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+
+}
+.recipe-mtrlbtn input:checked + label { 
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+0,fbfff4+100 */
+	background: rgb(239,239,239); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(239,239,239,1) 0%, rgba(251,255,244,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(251,255,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(239,239,239,1) 0%,rgba(251,255,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fbfff4',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Recipe  vegantype button   */
+.recipe-typebtn { width:300px; height:180px; margin:20px auto 60px auto; }
+.recipe-typebtn li { width:90px; height:80px; margin:5px;}
+.recipe-typebtn li:nth-of-type(4) {margin-left:55px;}
+.recipe-typebtn input {
+	display:block;float:left;
+	width:15px; height:15px; margin:5px 0 0 5px;
+	 border:0; outline:0;
+}
+.recipe-typebtn label {
+	display:block; width:100%; height:100%; padding-top:20px;
+	letter-spacing: -2px;text-align:center;
+	border-bottom:1px solid #E4E4E4; border-radius:5px;
+	border-right:1px solid #E4E4E4;	
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	/*border:1px solid #E9E9E9; border-radius: 8px;*/
+	transition:all 0.2s ease-out;
+	cursor:pointer;
+}
+.recipe-typebtn label i {
+	display:block; padding-bottom: 5px;
+	font-size:20px; color:rgba(0,0,0,0.4);text-align:center;
+	transition:all 0.2s ease-out;
+}
+.recipe-typebtn label:hover, .recipe-typebtn input:checked + label { 
+	color:#999;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efefef+0,fbfff4+100 */
+	background: rgb(239,239,239); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(239,239,239,1) 0%, rgba(251,255,244,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(251,255,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(239,239,239,1) 0%,rgba(251,255,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fbfff4',GradientType=0 ); /* IE6-9 */
+}
+.recipe-typebtn label:hover  i,.recipe-typebtn input:checked +label i {color: rgba(27,94,32,0.4); }
+
+/* Recipe  card text  */
+.recipe-card {width:100%; margin-top:60px; }
+.recipe-card .p-total {float:left;padding-left:30px;}
+.recipe-card .p-recent {float:right;padding-right:30px;}
+.recipe-card .p-like {	float:right;padding-right:5px;}
+
+/* Recipe   card */
+.recipe-card ul {
+	position:relative; width:300px; height:450px; margin: 40px auto; padding:0px;
+	border-radius:10px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+	transition:all 0.4s ease-in;
+	overflow: hidden;
+}
+.recipe-card ul:nth-of-type(1) { margin-top:40px;}
+.recipe-card ul:nth-of-type(9) { display: none;}
+.recipe-card ul li { float:none; padding:0; transition:all 0.4s ease-in; }
+.recipe-card ul li img { display:block; width:100%; transition:all 0.2s ease-in;}
+.recipe-card ul li:nth-child(2) { 
+	padding:10px 0 0 20px;
+	font-size:28px; color:#07721A; font-weight:bold; font-style: italic;letter-spacing: -1.5px;line-height: 30px;
+	/*text-shadow: 1px 1px 1px rgba(3,3,3,0.4);*/text-transform: uppercase;
+}
+.recipe-card ul li:nth-child(3) { 
+	padding:10px 10px 10px 20px; color:#333; 
+}
+.recipe-card ul li .recipe-box { 
+	position:absolute; left:0; top:600px; width:100%;height:100%; 
+	transition:all 0.4s ease-in;
+}
+.recipe-card ul .recipe-box  h4 { padding-top:120px; font-size:24px; text-align:center;  }
+.recipe-card ul .recipe-box p { width:70%; margin:30px auto; text-align:center; }
+.recipe-card ul .recipe-box a { 
+	width:160px; height:50px; margin:30px auto; color:#FFF; 
+	text-align:center; line-height:50px; 
+	border:1px solid #FFF; border-radius:30px;   
+	cursor:pointer;
+}
+.recipe-card ul:hover { box-shadow: 10px 10px 30px rgba(0,0,0,0.3);}
+.recipe-card ul:hover img { transform:scale(2.7);}
+.recipe-card ul:hover > li:nth-child(2) { transform:translateX(-500px); opacity:0; }
+.recipe-card ul:hover > li:nth-child(3)  { transform:translateX(500px); opacity:0; }
+.recipe-card ul:hover .recipe-box { 
+	top:0px; color:#FFF; 
+	background: rgba(0,0,0,0.75);
+}
+
+/*  Recipe more button  */
+.moreBtn img {
+display:block; width:45px;padding-top:30px; margin:0px auto;
+}
+.moreBtn p {
+padding-top:10px;text-align: center;
+}
+
+/* Recipe layer popup  */
+.recipe-modal {
+	display:none;
+	position:fixed; top:0;left:0;
+	width:100%; height:100vh; 
+	background:rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+}
+.recipe-modal-content {
+	position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+	width:100%; height:100%; padding:10px;
+	background:rgba(0,0,0,0.8); color:#FFF;
+}
+.recipe-modal-text { width:100%; }
+.recipe-modal-text h4{padding:20px;  font-size:28px;}
+.recipe-modal-text h4 strong { color:#f56e26;}
+.recipe-modal-text p { padding:20px; }
+.recipe-modal-content img {width:60%; padding:20px; border-radius:20px; }
+.recipe-modal-content > p{  padding:20px;}
+.recipe-modal-content p strong { color:green;}
+.recipe-modal-content button {
+	float:right; position:absolute; bottom:30px; right:30px; padding:10px 20px;
+	border-radius:20px; border:0; outline:0;  background:#e4e4e4;
+	cursor:pointer;
+}
+.recipe-modal-content button:hover { background:#000; color:#FFF;}
+
+/* ===== //MOBILE recipe-index end ===== */
+
+
+
+/* ===== MOBILE map-index start ===== */
+
+.map { overflow: hidden; position: relative; width: 100vw; height: 100vh; background: url("../imgs/map/map.png") no-repeat center center; background-size: cover; background-attachment: fixed; }
+.map-wrap { width: 100%; height: 100%; }
+
+/* tab */
+.map-tabs { position: absolute; bottom: 0; width: 100%; height: 300px; background: #fff; }
+.map-tabs > input { display: none; }
+.map-tabs > label { display: block; float: left; position: relative; width: 50%; height: 60px; text-align: center; line-height: 60px; border-bottom: 1px solid #ccc; cursor: pointer; transition: color .3s; }
+.map-tabs > label::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 0; background: #1b571f; transition: all .3s; }
+.map-tabs > input:checked + label { color: #1b571f; }
+.map-tabs > input:checked + label::after { height: 4px; }
+
+/* checked tab */
+.map-tab-select1:checked ~ .map-tab-contents .map-tab-contents1,
+.map-tab-select2:checked ~ .map-tab-contents .map-tab-contents2 { opacity: 1; z-index: 3; }
+
+/* tab contents */
+.map-tab-contents { position: relative; width: 100%; height: 60px; border-bottom: 1px solid #ccc; }
+.map-tab-contents1,
+.map-tab-contents2 { position: absolute; width: 100%; height: 100%; opacity: 0; transition: opacity .3s; }
+
+/* contents1 */
+.map-tab-contents1 li { position: relative; padding: 0 30px; width: 100%; height: 60px; }
+.map-tab-contents1 li > div { position: relative; top: 50%; width: 100%; height: 40px; transform: translateY(-50%); }
+.map-tab-contents1 li input { display: inline-block; position: absolute; left: 50%; width: 100%; height: 40px; margin-right: 10px; padding-left: 20px; border: 2px solid #1b571f; border-radius: 20px; transform: translateX(-50%); }
+.map-tab-contents1 li button { display: inline-block; position: absolute; left: 100%; width: 40px; height: 40px; color: #fff; background: #1b571f; border-radius: 50%; cursor: pointer; transform: translateX(-40px);  }
+
+/* contents2 */
+.map-tab-contents2 > li { padding: 0 20px; }
+.map-tab-contents2 .map-button-box li { line-height: 60px; }
+.map-tab-contents2 .map-button-box li input { display: none; }
+.map-tab-contents2 .map-button-box li label { display: inline-block; position: relative; height: 30px; margin-right: 10px; padding: 0 10px 0 35px; font-size: 14px; color: #333; line-height: 30px; background: #fff8e1; border-radius: 10px; cursor: pointer; transition: all .3s; }
+.map-tab-contents2 .map-button-box li label::before { content: ""; position: absolute; left: 5px; top: 3px; width: 25px; height: 25px; transition: background-image .3s; }
+.map-tab-contents2 .map-button-box li:nth-of-type(1) label::before { background: url("../imgs/map/map-toggle-restaurant-color.png") no-repeat center center; }
+.map-tab-contents2 .map-button-box li:nth-of-type(2) label::before { background: url("../imgs/map/map-toggle-coffee-color.png") no-repeat center center; }
+.map-tab-contents2 .map-button-box li:nth-of-type(3) label::before { background: url("../imgs/map/map-toggle-bike-color.png") no-repeat center center; }
+
+/* button checked & hover */
+
+.map-tab-contents2 .map-button-box input:checked + label { color: #fff; background: #1b571f; }
+.map-tab-contents2 .map-button-box li:nth-of-type(1) input:checked + label::before { background: url("../imgs/map/map-toggle-restaurant.png") no-repeat center center; }
+.map-tab-contents2 .map-button-box li:nth-of-type(2) input:checked + label::before { background: url("../imgs/map/map-toggle-coffee.png") no-repeat center center; }
+.map-tab-contents2 .map-button-box li:nth-of-type(3) input:checked + label::before { background: url("../imgs/map/map-toggle-bike.png") no-repeat center center; }
+
+/* search-list */
+.map-search-list { overflow-y: scroll; width: 100%; height: 100%; }
+.map-search-list li { position: relative; width: 100%; height: 85px; padding: 0 25px; background: #fff; border-bottom: 1px solid #ccc; transition: background-color .3s; }
+.map-search-list li::before { content: ""; position: absolute; left: 30px; top: 20px; width: 25px; height: 25px; background: url("../imgs/map/map-list-place.png") no-repeat center center; transition: background-image .3s; }
+.map-search-list li a { height: 100%; padding: 20px 30px 0; }
+.map-search-list li p { display: inline-block; margin-top: 10px; }
+.map-search-list li p:nth-of-type(2) { margin-left: 10px; }
+
+.map-search-list li:active { background: #e8f5e9; }
+.map-search-list li:active::before { background: url("../imgs/map/map-list-place-color.png") no-repeat center center; }
+.map-search-list li:active h2 { font-weight: bold; color: #1b571f; }
+.map-search-list li:active p { color: #000; }
+
+/* modal */
+.map .map-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .6); z-index: 89; }
+.map .map-modal .map-modal-content { position: relative; left: 50%; top: 50%; width: 320px; height: 500px; padding: 25px 25px 0; background: #fff; transform: translate(-50%, -50%); }
+
+.map-modal-close { position: absolute; right: 30px; width: 25px; height: 25px; text-align: center; }
+.map-modal-close img { width: 25px; height: 25px; }
+.map-modal-content h2 { margin-bottom: 30px; font-size: 22px; font-weight: bold; }
+
+.map-slider { overflow: hidden; position: relative; width: 270px; height: 180px; background: #ddd; }
+.map-slider .map-slide-list { position: absolute; height: 100%; }
+.map-slider .map-slide-list .map-slide { width: 270px; height: 180px; }
+.map-slider .map-slide-list .map-slide img { width: 100%; height: auto; }
+
+/* map slide prev & next button */
+#map-prev, 
+#map-next { position: absolute; width: 40px; height: 40px; top: 50%; font-size: 30px; color: #fff; text-align: center; line-height: 35px; background: rgba(0, 0, 0, .7); transform: translateY(-50%); z-index: 9; }
+#map-prev { left: 0; }
+#map-next { right: 0; }
+
+/* modal content info */
+.map-modal-content > ul { float: left; margin-top: 40px; }
+.map-modal-content > ul:nth-of-type(1) { width: 60px; text-align: right; }
+.map-modal-content > ul:nth-of-type(2) { width: 190px; margin-left: 20px; text-align: left; }
+.map-modal-content > ul li { float: none; font-size: 14px; line-height: 30px; word-wrap: break-word; }
+
+/* ===== //MOBILE map-index end ===== */
